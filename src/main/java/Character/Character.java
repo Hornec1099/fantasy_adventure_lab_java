@@ -1,13 +1,15 @@
 package Character;
 
-public class Character {
+public abstract class Character {
 
     private String name;
     private int armour;
+    private int health;
 
-    public Character(String name, int armour){
+    public Character(String name, int armour,int health){
         this.name = name;
         this.armour = armour;
+        this.health = health;
     }
 
     public int getArmour() {
