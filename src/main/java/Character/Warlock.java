@@ -28,4 +28,14 @@ public class Warlock extends Mage{
         int comboDamage = this.castSpell() + creatureDamage;
         return enemyCreature.takeDamage(comboDamage);
     }
+
+    public void takeDamage(Creature enemyCreature){
+        int damage = enemyCreature.getDamage();
+        if (damage < creature.getHealth()){
+            creature.takeDamage(damage);
+
+        }else{
+
+        }
+    }
 }
