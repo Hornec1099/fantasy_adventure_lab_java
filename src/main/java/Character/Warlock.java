@@ -19,4 +19,13 @@ public class Warlock extends Mage{
     public void setCreature(Creature creature) {
         this.creature = creature;
     }
+
+    public String attackEnemy(Creature enemyCreature){
+        //get our creature dmg
+        //add to warlock damage
+        //take both from enemyCreature
+        int creatureDamage = this.creature.getDamage();
+        int comboDamage = this.castSpell() + creatureDamage;
+        return enemyCreature.takeDamage(comboDamage);
+    }
 }

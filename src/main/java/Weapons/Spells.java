@@ -11,4 +11,8 @@ public enum Spells {
     Spells(int damage){
         this.damage= damage;
     }
+
+    public int getDamage(){
+        return this.damage;
+    }
         }

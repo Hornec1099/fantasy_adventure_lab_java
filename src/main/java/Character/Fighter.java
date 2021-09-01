@@ -22,9 +22,9 @@ public abstract class Fighter extends Character implements IFight {
     }
 
     @Override
-    public void attackEnemy(Creature creature) {
+    public String attackEnemy(Creature creature) {
         int damage = weapon.getDamage();
-        creature.takeDamage(damage);
+        return creature.takeDamage(damage);
     }
 
 

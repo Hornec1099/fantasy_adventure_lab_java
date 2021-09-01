@@ -5,5 +5,5 @@ import Weapons.Spells;
 
 public interface ICastSpell {
 
-    String castSpell(Spells spell, Creature creature);
+    int castSpell();
 }

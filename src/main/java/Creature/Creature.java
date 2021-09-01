@@ -17,11 +17,20 @@ public class Creature {
         return this.health;
     }
 
-    public void takeDamage(int damageTaken){
+    public String takeDamage(int damageTaken){
         this.health -= damageTaken;
+        if (this.health <= 0){
+            return "The creature is dead";
+        } else {
+            return "The creature has " + this.health + " health";
+        }
     }
 
     public void attackCharacter(Character character){
         character.takeDamage(this.damage);
+    }
+
+    public int getDamage(){
+        return this.damage;
     }
 }

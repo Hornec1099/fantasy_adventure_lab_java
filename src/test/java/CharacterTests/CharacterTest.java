@@ -35,7 +35,7 @@ public class CharacterTest {
 
      @Test
      public void canFight(){
-          testKnight.attackEnemy(testCreature);
+          assertEquals("The creature has 16 health", testKnight.attackEnemy(testCreature));
           assertEquals(16, testCreature.getHealth());
      }
 

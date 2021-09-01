@@ -14,7 +14,7 @@ public abstract class Mage extends Character implements ICastSpell {
         this.spell = spell;
     }
 
-    public String castSpell(Spells spell, Creature enemy){
-        return "spell casted";
+    public int castSpell(){
+        return this.spell.getDamage();
     }
 }
