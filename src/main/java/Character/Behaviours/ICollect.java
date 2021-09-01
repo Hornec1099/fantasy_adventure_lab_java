@@ -1,5 +1,7 @@
 package Character.Behaviours;
 
+import Environment.Collectables.Treasure;
+
 public interface ICollect {
-    String collectItem();
+    void collectItem(Treasure item);
 }

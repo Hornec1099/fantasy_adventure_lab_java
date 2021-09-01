@@ -1,4 +1,5 @@
 package Creature;
+import Character.Character;
 
 public class Creature {
 
@@ -12,7 +13,15 @@ public class Creature {
         this.damage = damage;
     }
 
+    public int getHealth(){
+        return this.health;
+    }
+
     public void takeDamage(int damageTaken){
         this.health -= damageTaken;
+    }
+
+    public void attackCharacter(Character character){
+        character.takeDamage(this.damage);
     }
 }

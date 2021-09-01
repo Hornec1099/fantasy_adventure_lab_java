@@ -8,8 +8,8 @@ public abstract class Fighter extends Character implements IFight {
 
     private Weapon weapon;
 
-    public Fighter(String name, int armour, int health, Weapon weapon){
-        super(name, armour, health);
+    public Fighter(String name, int armour, int health, int wallet, Weapon weapon){
+        super(name, armour, health, wallet);
         this.weapon = weapon;
     }
 
@@ -23,7 +23,8 @@ public abstract class Fighter extends Character implements IFight {
 
     @Override
     public void attackEnemy(Creature creature) {
-
+        int damage = weapon.getDamage();
+        creature.takeDamage(damage);
     }
 
 

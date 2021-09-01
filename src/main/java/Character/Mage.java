@@ -7,12 +7,10 @@ import Weapons.Spells;
 
 public abstract class Mage extends Character implements ICastSpell {
 
-    Creature creature;
     Spells spell;
 
-    public Mage(String name, int armour, int health, Creature creature, Spells spell) {
-        super(name, armour, health);
-        this.creature = creature;
+    public Mage(String name, int armour, int health, int wallet, Spells spell) {
+        super(name, armour, health, wallet);
         this.spell = spell;
     }
 
