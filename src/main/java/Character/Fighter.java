@@ -4,7 +4,7 @@ import Character.Behaviours.IFight;
 import Creature.Creature;
 import Weapons.Weapon;
 
-public class Fighter extends Character implements IFight {
+public abstract class Fighter extends Character implements IFight {
 
     private Weapon weapon;
 
@@ -21,12 +21,10 @@ public class Fighter extends Character implements IFight {
         this.weapon = weapon;
     }
 
-    public void attackCreature(){
-
-    }
-
     @Override
     public void attackEnemy(Creature creature) {
-        
+
     }
+
+
 }
